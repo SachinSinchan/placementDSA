@@ -1,0 +1,17 @@
+import java.util.*;
+public class kk{
+    public static int sum(int n){
+        if(n==1){
+            return 1;
+        }
+        else{
+            int fsumnm1=sum(n-1);
+            int fsumn=n+sum(n-1);
+            return fsumn;
+        }
+    }
+    public static void main(String args[]){
+        int n=7;
+        System.out.println(sum(n));
+    }
+}
